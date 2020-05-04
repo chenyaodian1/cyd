@@ -1,0 +1,9 @@
+package rules
+import com.es.Person;
+
+rule "Hello World"
+    when
+       b:Person( age >= 18 );
+    then
+       b.setIsAdult( 1 );
+end
